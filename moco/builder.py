@@ -22,7 +22,6 @@ class MoCoV3(torch.nn.Module):
         self.base_encoder = base_encoder()
         self.momentum_encoder = base_encoder()
 
-        
         # build projector and predictor_mlps
         # ---------------------------------------------------------------------------------------------
         hidden_dim = self.base_encoder.fc.weight.shape[1]

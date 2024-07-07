@@ -1,0 +1,26 @@
+{
+    "experiment_path": "/app/pgrachev/moco/experiments/exp020",
+    "dataset_params": {
+        "datapath": "/app/pgrachev/data/tracks_wav",
+        "batch_size": 4,
+        "sr": 44100,
+        "n_fft": 2048,
+        "hop_length": 512,
+        "n_chunks": 2,
+        "duration": 10,
+        "max_chunk_extractions": 20
+    },
+    "dataloader_params": {
+        "max_queue_size": 8,
+        "num_threads": 18
+    },
+    "learning_rate": 1e-06,
+    "weight_decay": 0.01,
+    "sgd_momentum": 0.99,
+    "moco_momentum": 0.99,
+    "epochs": 300,
+    "with_momentum": true,
+    "pretrained": true,
+    "comment": "Переделываю эксперимент 20 сделал optimizer AdamW",
+    "model_name": "MoCoV3"
+}
